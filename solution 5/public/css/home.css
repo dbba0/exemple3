@@ -1,0 +1,72 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header, footer {
+    padding: 1rem;
+    background-color: #ddabff;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+#list-books {
+    width: 100%;
+    padding: .5rem;
+    margin-bottom: 2rem;
+}
+
+#form-books {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+#form-books label {
+    display: flex;
+    flex-direction: column;
+}
+
+#form-books input {
+    padding: .5rem;
+}
+
+#form-books textarea {
+    padding: .5rem;
+    resize: none;
+    height: 5rem;
+    font-family: sans-serif;
+}
+
+#buttons {
+    display: flex;
+}
+
+#buttons input {
+    flex: 1;
+}
+
+#default-button {
+    display: none;
+}

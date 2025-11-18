@@ -1,0 +1,48 @@
+<form id="form-books">
+    <select id="list-books">
+        <option value="">-- Sélectionner un livre --</option>
+        {{#each books}}
+            <option value="{{this.isbn}}">
+                ({{this.isbn}}) - {{this.title}}
+            </option>
+        {{/each}}
+    </select>
+
+    <label>
+        ISBN:
+        <input type="text" name="isbn">
+    </label>
+
+    <label>
+        Titre:
+        <input type="text" name="title">
+    </label>
+
+    <label>
+        Nombre de pages:
+        <input type="number" name="nbPages">
+    </label>
+
+    <label>
+        Sommaire:
+        <textarea name="summary"></textarea>
+    </label>
+
+    <label>
+        Auteurs:
+        <input type="text" name="authors">
+    </label>
+
+    <label>
+        categories:
+        <input type="text" name="categories">
+    </label>
+
+    <div id="buttons">
+        <input type="submit" value="" name="" id="default-button">
+        <input type="submit" value="Ajouter" name="add">
+        <input type="submit" value="Modifier" name="update">
+        <input type="submit" value="Supprimer" name="delete">
+        <input type="reset" value="Vider">
+    </div>
+</form>
